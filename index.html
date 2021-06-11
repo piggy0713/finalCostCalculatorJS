@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Final Bill after tax and tip</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Canadian Final Bill Calculator</h1>
+    <form id="bill-form">
+      <div class="input-group">
+        <div class="input-group-icon">$</div>
+        <div class="input-group-field">
+          <input type="number" id="billAmount" placeholder="Bill before tax" />
+        </div>
+      </div>
+      <div></div>
+      <div class="input-group">
+        <div class="input-group-icon">Tip</div>
+
+        <div class="input-group-field">
+          <input type="range" id="tipInput" min="0" max="100" value="15" />
+        </div>
+        <div class="input-group-icon" id="percentOfTip">15%</div>
+      </div>
+      <div class="provinceWrapper">
+        <select name="province" id="province">
+          <option value="">--Please choose your province--</option>
+          <option value="AB">Alberta</option>
+          <option value="BC">British Columbia</option>
+          <option value="MB">Manitoba</option>
+          <option value="NB">New Brunswick</option>
+          <option value="NL">Newfoundland and Labrador</option>
+          <option value="NT">Northwest Territories</option>
+          <option value="NS">Nova Scotia</option>
+          <option value="NU">Nunavut</option>
+          <option value="ON">Ontario</option>
+          <option value="PE">Prince Edward Island</option>
+          <option value="QC">Quebec</option>
+          <option value="SK">Saskatchewan</option>
+          <option value="YT">Yukon</option>
+        </select>
+      </div>
+      <input type="submit" id="calculate" value="Calculate" />
+    </form>
+    <hr />
+    <div id="result">
+      <h2>Final Bill</h2>
+      <div class="input-group">
+        <div class="input-group-icon">Tip Amount</div>
+        <div class="input-group-field">
+          <input type="number" id="tipAmount" disabled />
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="input-group-icon">Tax Amount</div>
+        <div class="input-group-field">
+          <input type="number" id="taxAmount" disabled />
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="input-group-icon">Final Bill Amount</div>
+        <div class="input-group-field">
+          <input type="number" id="finalBill" disabled />
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

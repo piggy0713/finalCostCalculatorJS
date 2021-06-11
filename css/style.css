@@ -1,0 +1,79 @@
+body {
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  display: block;
+  color: #ff6b78;
+}
+
+#bill-form {
+  margin: 20px 8px;
+}
+
+.input-group {
+  display: table;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px 10px;
+}
+
+.input-group > div {
+  display: table-cell;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.input-group-icon {
+  background: #eee;
+  padding: 0 8px;
+  color: #b886fd;
+}
+
+.input-group-field {
+  width: 100%;
+}
+
+.input-group input {
+  border: 0;
+  display: block;
+  padding: 6px;
+  color: #3edee5;
+  text-align: start;
+  cursor: text;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  width: 95%;
+  -moz-appearance: textfield;
+}
+
+.provinceWrapper {
+  width: 50%;
+  margin: 10px;
+  text-align: left;
+}
+
+#calculate {
+  background: #eee;
+  padding: 6px;
+  margin: 10px;
+}
+
+#result {
+  margin: 30px 5px;
+  display: none;
+}
+
+#result .input-group-field {
+  width: 85%;
+}
